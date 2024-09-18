@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Padaria Qbom</h1>
+    </header>
+
+    <section class="hero">
+        <div class="box-img">
+            <img class="responsiva" id="doutora" src="img/pao 1.webp">
+        </div>
+        <div class="box-txt">
+            <span>Não Perca Tempo</span>
+            <h2>Pão Caseiro,<br>Gourmet!</h2>
+            <p>Imagine um pão meticulosamente preparado, onde cada ingrediente é escolhido a dedo para garantir a mais alta qualidade. Nosso pão gourmet é um tributo à paixão pela panificação, combinando técnicas tradicionais com um toque contemporâneo.</p>
+            <a target="_blank" href="https://web.whatsapp.com/"
+                class="btn-hero">Peça Seus Pães</a>
+        </div>
+    </section>
+
+    <section class="especialidades">
+        <div class="box-item">
+            <h3>Especialidade 1</h3>
+            <p>Deixe-se levar pela paixão que colocamos em cada pedaço. Nosso pão gourmet artesanal é mais do que um alimento; é uma celebração do sabor autêntico e da dedicação à excelência. Experimente a diferença hoje e transforme seu momento de refeição em uma experiência inigualável.</p>
+        </div>
+        <div class="box-item">
+            <h3>Especialidade 2</h3>
+            <p>Nossos biscoitos gourmet são mais do que uma simples guloseima; são uma celebração da excelência na confeitaria. Criados com maestria, cada biscoito reflete a paixão por sabores autênticos e ingredientes de alta qualidade.</p>
+        </div>
+        <div class="box-item">
+            <h3>Especialidade 3</h3>
+            <p>Nosso pão de queijo gourmet é mais do que uma simples iguaria - é a fusão magistral entre a autenticidade brasileira e a inovação gourmet. Cada porção é cuidadosamente elaborada para capturar o espírito acolhedor do tradicional pão de queijo, elevando-o a novos patamares de sabor e requinte.
+
+            </p>
+        </div>
+        <a target="_blank" href="https://web.whatsapp.com/"
+            class="m-top btn-hero">Faça Seu Delicioso Pedido</a>
+
+    </section>
+
+    <footer>
+        <p>2023 © Padaria Qbom. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="whats">
+        <a target="_blank" href="https://web.whatsapp.com/">
+            <img width="50" src="img/WhatsApp_Logo_PNG_Transparente_Sem_Fundo.png">
+        </a>
+    </div>
+
+    <script>
+        //PEGAR O ELEMENTO
+        const doutora = document.getElementById('doutora');
+
+        //EVENTO QUANDO MOUSE ESTIVER POR CIMA DA IMAGEM
+        doutora.addEventListener('mouseover', function () {
+            doutora.src = "img/pao 2.webp";
+        });
+
+        //EVENTO QUANDO MOUSE SAIR DE CIMA DA IMAGEM
+        doutora.addEventListener('mouseout', function () {
+            doutora.src = "img/pao 1.webp";
+        });
+
+    </script>
+
+</body>
+
+</html>
